@@ -7,7 +7,7 @@ bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(commands=['Hi', 'hi', 'hello', 'hey', 'hola'])
 def greet(message):
-    number = str(int(random.uniform(-1, 4)))
+    number = str(int(random.uniform(-1, 10)))
     print(number)
     path = "pics/"
     img = open(path + number + ".png", 'rb')
